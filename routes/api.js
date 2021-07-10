@@ -10,7 +10,6 @@ router.get('/jobs', function(req, res, next) {
       })
       .catch(next)
 })
-  
 // get one job
 router.get('/jobs/:id', function(req, res, next) {
     Job.findOne({ _id: req.params.id })
